@@ -1,0 +1,73 @@
+
+/* Encabezado */
+header {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Secciones */
+.contenido {
+    width: 70%;
+}
+
+.sidebar {
+    width: 25%;
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Pie de página */
+footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* 🟢 RESPONSIVE DESIGN */
+
+/* Para tablets y móviles */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenido, .sidebar {
+        width: 100%;
+    }
+}
+
+/* Para móviles pequeños */
+@media (max-width: 480px) {
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
